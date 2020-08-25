@@ -25,6 +25,7 @@ import java.util.Set;
  * 1）自定义配置文件重构代码
  * 2）反射创建自定义Mapper对象
  * 3）可插拔的业务逻辑处理————不区分大小写
+ * @author WeiLoong
  */
 public class WCApp02 {
     public static void main(String[] args) throws Exception{
@@ -50,7 +51,7 @@ public class WCApp02 {
             LocatedFileStatus file = iterator.next();
             FSDataInputStream in = fs.open(file.getPath());
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-            String line = "";
+            String line;
             while((line = reader.readLine()) != null){
 
                 //词频统计 ==> Mapper

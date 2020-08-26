@@ -5,6 +5,7 @@ import java.util.Properties;
 
 /**
  * 读取属性配置文件
+ * @author WeiLoong
  */
 public class ParamsUtils {
 
